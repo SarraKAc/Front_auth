@@ -1,0 +1,162 @@
+
+<!--==================================
+=            User Profile            =
+===================================-->
+
+<section class="user-profile section">
+	<div class="container">
+		<div class="row">
+			<div class=" col-md-10 offset-md-1 col-lg-3 offset-lg-0">
+				<div class="sidebar">
+					<!-- User Widget -->
+					<div class="widget user">
+						<!-- User Image -->
+						<div class="image d-flex justify-content-center">
+							<img  alt="" class="">
+						</div>
+						<!-- User Name -->
+						<h5 class="text-center">ALI NEJI</h5>
+					</div>
+				
+			
+				</div>
+			</div>
+
+			<div class="col-md-10 offset-md-1 col-lg-9 offset-lg-0">
+				<form  >
+				<!-- Edit Profile Welcome Text -->
+				<div class="widget welcome-message">
+					<h2>Modifier profile</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+				</div>
+				<!-- Edit Personal Info -->
+				
+				<div class="row">
+
+		
+					
+					<div class="col-lg-6 col-md-6">
+						<div class="widget personal-info">
+							<h3 class="widget-header user">
+								modifier les informations personnelles</h3>
+						
+								<!-- First Name -->
+								<div class="form-group">
+									<label for="first-name">Prénom</label>
+									<input type="text" class="form-control" id="prenom" (change)="getPrenom(prenom.value)" #prenom required>
+								</div>
+								<!-- Last Name -->
+								<div class="form-group">
+									<label for="last-name">Nom de famille</label>
+									<input type="text" class="form-control"  id="nom" (change)="getName(nom.value)" #nom required>
+								</div>
+
+										<!-- Work -->
+										<div class="form-group">
+											<label for="first-name">Profession</label>
+											<input type="text" class="form-control" id="profession" (change)="getProfession(profession.value)" #profession required>
+										</div>
+										<!-- Places -->
+										<div class="form-group">
+											<label for="last-name">Ville</label>
+											<select class="form-select mb-3" id="ville" (change)="getVille(ville.value)" #ville aria-label="Default select example" >
+									<option selected=""><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Open this select menu</span></span></option>
+									<option value="Ariana"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Ariana</span></span></option>
+									<option value="Tunis"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Tunis</span></span></option>
+									<option value="Gabes"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Gabes</span></span></option>
+									<option value="Nabel"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Nabel</span></span></option>
+
+								</select>
+										</div>
+						
+								<!-- File chooser -->
+								<div class="mb-3">
+									<label for="formFile" class="form-label">choisir l'image de votre profil</label>
+									<input id="formFile" class="form-control" 
+                type="file"
+                class="p-inputtext"
+                accept="image/*"
+				(change)="onFileChanged($event)"
+              />
+								</div>
+							
+						
+						
+						
+						</div>
+					</div>
+						<div class="col-lg-6 col-md-6">
+						<div class="widget personal-info">
+							<h3 class="widget-header user">
+								modifier les informations personnelles</h3>
+						
+								<!-- First Name -->
+								<div class="form-group">
+									<label for="first-name">Adresse Email</label>
+									<input type="text" class="form-control" id="email" (change)="getEmail(email.value)" #email required>
+								</div>
+								<!-- paassword -->
+								<div class="form-group">
+									<label for="last-name">Changer Mot de passe</label>
+									<input type="password" class="form-control"id="password" (change)="getPassword(password.value)" #password required>
+								</div>
+								<div class="form-group">
+									<label for="last-name">répéter mot de passe</label>
+									<input type="text" class="form-control" id="last-name" >
+								</div>
+							
+
+								<!-- skills -->
+							
+					
+                                    <label class="col-form-label col-sm-2 pt-0 ">compétences</label>
+                                    <div class="col-sm-10">
+                                        <div class="form-switch">
+                                            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1" checked="">
+                                            <label class="form-check-label" for="gridRadios1">
+                                                First radio
+                                            </label>
+                                        </div>
+                                        <div class="form-switch">
+                                            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios2" value="option2">
+                                            <label class="form-check-label" for="gridRadios2">
+                                                Second radio
+                                            </label>
+                                        </div>
+										<div class="form-switch">
+                                            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios2" value="option2">
+                                            <label class="form-check-label" for="gridRadios2">
+                                                Second radio
+                                            </label>
+                                        </div>
+										<div class="form-switch">
+                                            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios2" value="option2">
+                                            <label class="form-check-label" for="gridRadios2">
+                                                Second radio
+                                            </label>
+                                        </div>
+								
+                                    </div>
+                       
+							
+						
+						
+						
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-4">
+			
+						<!-- Submit button -->
+						<button type="submit" (click)="OnEditProfile()" class="btn btn-primary ">
+							Enregistrer mes modifications</button>
+				
+					</div>
+			
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+</section>
